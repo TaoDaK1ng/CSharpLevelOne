@@ -11,8 +11,11 @@ namespace Lesson_2
         //Чагалысов
         //Задание 1
         //Написать метод, возвращающий минимальное из трёх чисел.
+
+        #region Метод возвращающий минимальное из трёх чисел  
+
         /// <summary>
-        /// Нахождение минимального числа из трех заданных чисел
+        /// Возвращает минимальное число из трех заданных чисел
         /// </summary>
         /// <param name="a">Первое число</param>
         /// <param name="b">Второе число</param>
@@ -23,10 +26,13 @@ namespace Lesson_2
             else if (b < c) { return b; }
             else { return c; }
         }
+        #endregion
+
         static void Main(string[] args)
         { 
             Console.WriteLine($"Минимальное число = {Min(1,2,3)}");
             Console.ReadLine();
         }
+
     }
 }
