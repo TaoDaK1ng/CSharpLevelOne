@@ -30,11 +30,23 @@ namespace Lesson_6
             Console.WriteLine("---------------------");
         }
         // Создаем метод для передачи его в качестве параметра в Table
+
+        /// <summary>
+        /// Возвращает результат функции: f(a,x) = a * x^2
+        /// </summary>
+        /// <param name="x">Число подставляемое в функцию вместо x</param>
+        /// <param name="a">Число подставляемое в функцию вместо а</param>
+        /// <returns>Результат функции, после подстановки</returns>
         public static double MyFuncPow(double x, double a)
         {
             return a * Math.Pow(x,2);
         }
-
+        /// <summary>
+        /// Возвращает результат функции: f(a,x) = a * sin(x)
+        /// </summary>
+        /// <param name="x">Число подставляемое в функцию вместо x</param>
+        /// <param name="a">Число подставляемое в функцию вместо а</param>
+        /// <returns>Результат функции, после подстановки</returns>
         public static double MyFuncSin(double x, double a)
         {
             return a * Math.Sin(x);
