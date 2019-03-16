@@ -36,10 +36,16 @@ namespace Lesson_7
             if (stepCount == stepNumber)
             {
                 lblTask.Text = "Вы проиграли!";
+                btnCommand1.Enabled = false;
+                btnCommand2.Enabled = false;
+                btnReset.Enabled = false;
             }
             if (int.Parse(lblNumber.Text) == victoryNumber)
             {
                 lblTask.Text = "Вы выиграли!";
+                btnCommand1.Enabled = false;
+                btnCommand2.Enabled = false;
+                btnReset.Enabled = false;
             }
         }
 
